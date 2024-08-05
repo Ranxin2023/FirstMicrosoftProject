@@ -1,0 +1,11 @@
+C:\Users\ranxi\UCDavis\W_workingApplication\C#\LoginApplication\LoginApplication\obj\Debug\LoginApplication.csproj.AssemblyReference.cache
+C:\Users\ranxi\UCDavis\W_workingApplication\C#\LoginApplication\LoginApplication\obj\Debug\LoginApplication.Properties.Resources.resources
+C:\Users\ranxi\UCDavis\W_workingApplication\C#\LoginApplication\LoginApplication\obj\Debug\LoginApplication.csproj.GenerateResource.cache
+C:\Users\ranxi\UCDavis\W_workingApplication\C#\LoginApplication\LoginApplication\obj\Debug\LoginApplication.csproj.CoreCompileInputs.cache
+C:\Users\ranxi\UCDavis\W_workingApplication\C#\LoginApplication\LoginApplication\bin\Debug\LoginApplication.exe.config
+C:\Users\ranxi\UCDavis\W_workingApplication\C#\LoginApplication\LoginApplication\bin\Debug\LoginApplication.exe
+C:\Users\ranxi\UCDavis\W_workingApplication\C#\LoginApplication\LoginApplication\bin\Debug\LoginApplication.pdb
+C:\Users\ranxi\UCDavis\W_workingApplication\C#\LoginApplication\LoginApplication\obj\Debug\LoginApplication.exe
+C:\Users\ranxi\UCDavis\W_workingApplication\C#\LoginApplication\LoginApplication\obj\Debug\LoginApplication.pdb
+C:\Users\ranxi\UCDavis\W_workingApplication\C#\LoginApplication\LoginApplication\obj\Debug\LoginApplication.Login.resources
+C:\Users\ranxi\UCDavis\W_workingApplication\C#\LoginApplication\LoginApplication\obj\Debug\LoginApplication.SignUp.resources
