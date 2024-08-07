@@ -12,23 +12,28 @@ namespace LoginApplication
 {
     public partial class Login : Form
     {
-        public Login()
+        public string SignupUsername;
+        public string SignupPassword;
+        public string SignupReentryPassword;
+        public Login(string Username, string Password)
         {
             InitializeComponent();
+            this.textBox1.Text = Username;
+            this.textBox2.Text = Password;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void LoginClick(object sender, EventArgs e)
         {
             string FilePath = "./username_password.txt";
             try
             {
-                String [] Lines = File.ReadAllLines(FilePath);
+                string [] Lines = File.ReadAllLines(FilePath);
                 bool isAuthenticated = false;
                 foreach(var Line in Lines)
                 {
-                    String[] Parts = Line.Split(' ');
-                    String username = Parts[0];
-                    String password = Parts[1];
+                    string[] Parts = Line.Split(' ');
+                    string username = Parts[0];
+                    string password = Parts[1];
                     if (this.textBox1.Text==username&&this.textBox2.Text==password)
                     {
                         isAuthenticated = true;
@@ -53,10 +58,17 @@ namespace LoginApplication
                     MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private void button2_Click(object sender, EventArgs e)
+        private void SignupClick(object sender, EventArgs e)
         {
+            string Username = this.textBox1.Text;
+            string Password = this.textBox2.Text;
             this.Hide(); // Hide the login form
-            SignUp signupForm = new SignUp();
+            SignUp signupForm = new SignUp
+                (this.SignupUsername, this.SignupPassword, this.SignupReentryPassword)
+            {
+                LoginUser=Username, 
+                LoginPassword=Password
+            };
             signupForm.Show(); // Show the signup form
 
             // Optionally, handle the FormClosed event of the signup form to close the application
